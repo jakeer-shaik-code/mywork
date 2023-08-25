@@ -88,16 +88,27 @@ while i<len(s):
 
 #write  a  python program to count occurence of given character in string
 
-count=0
+'''count=0
 my_string="programiz"
 my_char="r"
 
 for i in my_string:
     if i==my_char:
         count+=1
-print(count)
+print(count)'''
 
-
+#write a program t sort the character of string and first alphabet symbol followed by numeric values
+'''
+string=input("enter a string:")
+alpha=[]
+digit=[]
+for c in string:
+    if c.isalpha():
+        alpha.append(c)
+    else:
+        digit.append(c)
+result=''.join(sorted(alpha)+sorted(digit))
+print(result)'''
 
 
 

@@ -1,6 +1,6 @@
 # write a program to merge a list
 
-s=int(input("enter list:"))
+'''s=int(input("enter list:"))
 
 list1=[]
 for i in range(s):
@@ -13,7 +13,7 @@ for i in range(s):
        char=int(input("value of index"+str(i)+":"))
        list2.append(char)
 list1.extend(list2)
-print(list1)
+print(list1)'''
 
 
 

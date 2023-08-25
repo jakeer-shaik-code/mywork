@@ -16,8 +16,8 @@ a=x+" "+y+" "+z
 print(a)'''
 
 
-word="datagy"
+'''word="datagy"
 integer=2023
 
 new_word= word+str(integer)
-print(new_word)
+print(new_word)'''
