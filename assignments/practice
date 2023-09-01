@@ -1,0 +1,121 @@
+
+#1 Add key to dictionary
+
+# one={}
+# for i in range(3):
+#     key=input("enter keys:")
+#     value=input("enter values:")
+#     one[key]=value
+
+# k=input("enter key: ")
+# v=input("enter value: ")
+# add={k:v}
+# one.update(add)
+# print(one)
+
+
+# merge two python dictionaries
+# d1={}
+
+# for i in range(2):
+#     key=input("enter a key:")
+#     values=input("enter a values:")
+#     d1[key]=values
+# d2={}
+
+# for i in range(2):
+#     key=input("enter a key:")
+#     values=input("enter a values:")
+#     d2[key]=values
+# d1.update(d2)
+# print(d1)
+
+#9 remove key from dictionary
+# dict={}
+# for i in range(2):
+#     key=input("enter a key:")
+#     values=input("enter a values:")
+#     dict[key]=values
+# removal=input("enter a item:")
+# del dict[removal]
+# print(dict)
+
+
+
+
+
+
+#7 combine values of 2  dictinaries if keys are common
+# d1={}
+# for i in range(4):
+#     key=input("enter a key:")
+#     value=input("enter a value:")
+#     d1[key]=value
+# d2={}
+# for k in range(4):
+#     key=input("enter a keys:")
+#     value=input("enter a values:")
+#     d2[key]=value
+# for x,y in d2.items():
+#     if x in d1:
+#         d1[x]=d1[x]+d2[x]
+#     else:
+#         d1.update({x:y})
+# print(d1)
+
+
+
+
+# print(d1)
+
+d1={}
+for i in range(2):
+    key=int(input("enter key:"))
+    value=int(input("enter value: "))
+    d1[key]=value
+d2={}
+for k in range(0,2):
+    key=int(input("enter keys: "))
+    value=int(input("enter values:"))
+    d2[key]=value
+for x,y in d2.items():
+    if x in d1:
+        d1[x]=d1[x]+d2[x]
+    else:
+        d1.update({x:y})
+
+
+        
+
+
+print(d1)
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -107,7 +107,7 @@ print(b)'''
 
 #write a program to sort the alpha followed by the numeric
 
-st=input("enter a string:")
+'''st=input("enter a string:")
 alpha=[]
 digit=[]
 
@@ -120,7 +120,7 @@ result=alpha+digit
 
 final="".join(result)
 print(final)
-
+'''
 
 
 
