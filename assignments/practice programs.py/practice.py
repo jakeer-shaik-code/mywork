@@ -122,6 +122,209 @@ final="".join(result)
 print(final)
 '''
 
+# write a dict , keys as alphabets and values as ascil num
+
+'''dict={}
+for asci in range(ord("a"),ord("z")):
+    char=chr(asci)
+    dict[char]=asci
+print(dict)'''
+
+
+#write a dict program ,keys as vowels and asci as values
+
+'''dict={}
+
+for asci in range(ord("a"),ord("z")):
+    char=chr(asci)
+    if char in "aeiou":
+        dict[char]=asci
+print(dict)'''
+
+#d= {"goa":20,"bengalure":30,"hyderbad":40,"delhi":50,"simla":60,"andhrapradesh":70}
+
+'''for key in d:
+    print(key)'''
+
+'''for key in d:
+    if key[0] not in "aeiou":
+        print(key)'''
+
+
+'''for key in d:
+    value=d[key]
+    print(key,value)'''
+
+
+'''for value in d.values():
+    print(value)'''
+
+
+
+
+'''for key,value in d.items():
+    if value>30:
+        print(key)'''
+
+'''for key ,value in d.items():
+    if value <30 and key[-1] in "aeiou":
+        print(key,value)'''
+
+'''s="hello"
+count=0
+
+for i in s:
+    count=count+1
+print(count)'''
+
+#wap add all the words from the sentence as key and count of "i" in the word value
+
+#s="get busy  living or get busy dying"
+'''d={}
+words=s.split()
+
+for word in words:
+    d[word]=word.count("i")
+print(d)'''
+
+
+#counting "a "character in string
+
+'''c="a"
+count=0
+for char in s:
+    if char ==c:
+        count+=1
+print(count)'''
+
+
+#occurence of a number of words
+
+'''s= "see and saw went to see the sea"
+word=s.split()
+
+items=input("enter a item:")
+count=0
+
+for char in word:
+    if char==items:
+        count+=1
+print(count)'''
+
+
+
+s= "see and saw went see to see the sea"
+
+'''
+words=s.split()
+d={}
+for word in words:
+    c=s.count(word)
+    d[word]=c
+print(d)'''
+
+'''words=s.split()
+d={}
+for word in words:
+    count=0
+    for item in words:
+        if item==word:
+            count+=1
+    d[word]=count
+print(d)'''
+# only add if the word is repeated
+
+'''jakeer=s.split()
+d={}
+for jak in jakeer:
+    count=0
+    for shaik in jakeer:
+        if jak==shaik:
+            count+=1
+    if count>1:
+        d[jak]=count
+print(d)'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

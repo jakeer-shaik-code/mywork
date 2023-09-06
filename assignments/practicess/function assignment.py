@@ -84,12 +84,12 @@ sum_num(list)'''
 
 # 6.write a function to find sum of given values, pass values has variable number of arguments to function.
 
-def sum_of_values(*args):
+'''def sum_of_values(*args):
     total = 0
     for num in args:
         total += num
     return total
-print(sum_of_values(1,2,3,4,5))
+print(sum_of_values(1,2,3,4,5))'''
 
 
 

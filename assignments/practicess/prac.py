@@ -163,7 +163,7 @@ print(jack)'''
 
 
 #write a function  program to remove the duplicate in the list
-
+'''
 def removeduplicate(num):
     list=[]
     for i in num:
@@ -171,7 +171,24 @@ def removeduplicate(num):
             list.append(i)
     print(i)
 l=[2,3,3,4,5,4,2,1,8,7,6,5,8,7,32]
-removeduplicate(l)
+removeduplicate(l)'''
+
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
