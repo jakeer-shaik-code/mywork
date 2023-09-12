@@ -63,6 +63,14 @@ print(adults)'''
 
 
 
+def natural_numbers(x):
+    if x==0:
+        return 0
+    return natural_numbers (x-1)+x
+
+x=int(input("enter a num:"))
+champ= natural_numbers(x)
+print(champ)
 
 
 
