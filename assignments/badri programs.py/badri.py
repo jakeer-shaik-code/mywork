@@ -263,7 +263,7 @@ else:
     print("redirect to signup page")'''
 
 
-database={"jakeeer@gmail.com":"thenun2","virat@gmail.com":"thenun3","klrahul@gmail.com":"thenun4"}
+'''database={"jakeeer@gmail.com":"thenun2","virat@gmail.com":"thenun3","klrahul@gmail.com":"thenun4"}
 
 username=input("enter a username:")
 password=input("enter a  password:")
@@ -274,7 +274,7 @@ if username in database:
     print("move to next page interface as successful login")
 
 else:
-    print("data invaid move to previouse page interface as signup to new")
+    print("data invaid move to previouse page interface as signup to new")'''
 
 
 '''def login(database):
@@ -291,72 +291,310 @@ database={"jakeer@gmail.com":"thenun2","virat@gmail.com":"thenun3","klrahul@gmai
 login(database)'''
 
 
+#dict={"country101":{"country":"india","capital":"delhi"},"country102":{"country":"pakistan","capital":"karachi"},
+ #     "country103":{"country":"france","capital":"paris"},"country104":{"country":"austrlia","capital":"syndey"}}
+
+'''def signup(code,countryname,capitalname):
+    code=input("enter a code:")
+    countryname=input("enter a country:")
+    capitalname=input("enter a capital:")
+    dict[code]={"country":countryname,"capital":capitalname}
+    print(dict)
+
+def register(code,countryname,capitalname):
+    code=input("enter a code:")
+    if code in dict.keys():
+        countryname=input("enter a country:")
+        capitalname=input("enter a cpaital:")
+        if countryname ==dict[code]["country"] and capitalname==dict[code]["capital"]:          
+                print("correct")
+        else:
+            print("wrong")
+    else:
+        print("loading to signup page")
+        signup(code,countryname,capitalname)
+        print("succesfully register")
+register("102","pakistan","islamabad")'''
+
+'''
+def signup(code,countryname,capitalname):
+    code=input("enter a code:")
+    countryname=input("enter a country:")
+    capitalname=input("enter a capital:")
+    dict[code]={"country":countryname,"capital":capitalname}
+    print(dict)
+
+def register(code,countryname,capitalname):
+    countrycode=input("enter a code:")
+    if countrycode in dict.keys():
+        countryname=input("enter a country:")
+        capitalname=input("enter a capital:")
+        if countryname==dict[countrycode]["country"] and capitalname==dict[countrycode]["capital"]:
+            print("registered country")
+        else:
+            print("not registered")
+    else:
+        print("loading to signup page")
+        signup(code,countryname,capitalname)
+        print("succesfuly register")
+register("code","countryname","capitalname")'''
+
+
+'''def addition(x):
+    return x*x
+l=[1,2,3,4,5]
+final=list(map(addition,l))
+print(final)
+
+l=[1,2,3,4,5]
+final=list(map(lambda x:x*x,l))
+print(final)'''
+
+
+'''l=("1","2","3","4","5")
+print(type(l[0]))
+result=list(map(lambda x:int(x),l))
+print(result)
+print(type(result[0]))'''
+
+
+
+'''def outerfunction():
+    def innerfunction():
+        print("this is inner")
+    print("this is outer")
+    innerfunction()
+    
+outerfunction()'''
+
+
+
+
+'''for i in range(1,101):
+    for j in range(2,i):
+        if i%j==0:
+            break
+    else:
+        print(i)'''
+
+
+'''a=int(input("enter a number:"))
+out="prime"
+for i in range(2,a):
+    if a%i==0:
+        out="notprime"
+        break
+print(out)'''
+
+'''
+database={"jakeer@gmail.com":"thenun1","virat@gmail":"thenun2","rohit@gmail.com":"thenun3"}
+
+def signup(username,password):
+    username=input("enter a username:")
+    password=input("enter a password:")
+    database[username]=password
+    print(database)
 
+def login(username,password):
+    username=input("enter a username:")
+    if username in database.keys():
+        password=input("enter a password:")
+        if password in database.values():
+            
+            print("succesfully login ")
+        else:
+            print("invaid username")
 
+    else:
+        print("enter to signup page")
+        signup(username,password)
+        print("successfully signup")
+login("username","password") '''       
+        
 
 
 
+'''import random
+data="0123456789"
+var=random.sample(data,4)
+res=" ".join(var)
+print(res)'''
 
+#if num divisible by 3 and 5 print sweet and hot, if only 5 print hot , if only 3 print sweet
 
+'''a=int(input("enter a num:"))
+if a%3==0:
+    if a%5==0:
+        print("sweet and hot")
+    else:
+        print("hot")
+else:
+    print("sweet")'''
 
 
+#check list or not and even length or not
 
+'''a=[10,20,"true","hello","jspiders"]
 
+if type(a)==list:
+    if len(a)%2==0:
+        print("given collection is list and even")
+    else:
+        print("list and not even")
+else:
+    print("not list")'''
 
 
+###functions####
 
+#define to extract the spl characters from a string
 
+'''def string(s):
+    out=" "
+    for i in s:
+        if not i.isalnum():
+            out+=i
+        
+    print(out)
 
 
+s=input("enter a string:")
+string(s)'''
 
 
+#check homogenous or not collection
+'''def coll(a):
+    out="hemogenous"
+    t=type(a[0])
 
+    for i in a:
+        if type(i)!=t:
+            out="heterogones"
+            break
+    print(out)
 
+    
 
 
+a=[1,2,3,4,5,6]
+coll(a)'''
 
 
+#company name and interview schedule time
 
 
+'''def display(a,b):
+    print(f"company {a},the interview time schedule at {b}")
 
 
+display(input("enter company:"),input("enter time:"))
+'''
 
 
 
+'''def strong(a):
+    out=0
+    
+    for i in str(a):
+        t=1
+        for j in range(1,int(i)+1):
+            t*=j
+            out+=t
+            if out==int(a):
+                print(" strong num")
+            
+a=int(input("enter a num:"))
 
+strong(a)'''
 
 
 
+#find factorial in even index in heterogenous list
 
+'''def factorial(a):
+    out=[]
+    for i in range(len(a)):
+        if type (a[i])==int and i%2==0:
+            t=1
+            for j in range(1,int(i)+1):
+                t=t*j
+                out+=[t]
+    return out
 
 
 
+a=[2,3,4,5,"True",10,5,7,4,3,2]
+factorial(a)'''
 
 
+'''import math
+from math import*
+def problem(l):
+    Res=[]
+    for i in range(len(l)):
+        if i==0 or i%2==0:
+            if type(l[i])==int:
+                f=math.factorial(l[i])
+                Res=Res+[f]
+    print(Res)
 
+l=[2,3,4,5,"true",10,5,7,8,9]
+problem(l)'''
 
 
+'''
+menu={"vegloaded":120,"farmfresh":180,"non_veg loaded":230,"spiceddoublechicken":250}
+additionals={"extra cheese":20,"extra ketchup":30}
 
+a=int(input("Numof items needed:"))
 
 
 
+bill=0
+for i in range(a):
+    a=input("enter pizza name:")
+    b=int(input("enter quantity:"))
+    if a in menu:
+        bi= menu[a]*b
+        bill+=bi
+    c=input("enter a add on,type 1 else type 0:")
 
+    if c=="1":
+        d=input("enter addon:")
+        if d in additionals:
+            bill=bill+additionals[d]
+            print(f'total prize:{bill}')
+    else:
+        print("add on not found")
+else:
+    print(f'total prize:{bill}')'''
 
 
+'''menu={"vegloaded":120,"farmfresh":180,"nonveg loaded":230,"spiceddoublechicken":250}
+additionals={"extra cheese":20,"extra ketchup":30}
 
+o=int(input("Numof items needed:"))
 
 
 
+bill=0
+for i in range(o):
+    a=input("enter pizza name:")
+    b=int(input("enter quantity:"))
+    if a in menu:
+        bi= menu[a]*b
+        bill+=bi
+c=input("enter a add on,type 1 else type 0:")
 
-
-
-
-
-
-
-
-
-
+if c=="1":
+    d=input("enter addon:")
+    if d in additionals:
+        bill=bill+additionals[d]
+        print(f'total prize:{bill}')
+    else:
+            print("add on not found")
+else:
+    print(f'total prize:{bill}')'''
 
 
 
